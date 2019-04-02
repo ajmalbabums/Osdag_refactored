@@ -50,9 +50,9 @@ class IS800_2007(object):
             A_vg: Minimum gross area in shear along bolt line parallel to external force [in sq. mm] (float)
             A_vn: Minimum net area in shear along bolt line parallel to external force [in sq. mm] (float)
             A_tg: Minimum gross area in tension from the bolt hole to the toe of the angle,
-                           end bolt line, perpendicular to the line of force, respectively [in sq. mm] (float)
+                           end bolt line, perpendicular to the line of force [in sq. mm] (float)
             A_tn: Minimum net area in tension from the bolt hole to the toe of the angle,
-                           end bolt line, perpendicular to the line of force, respectively [in sq. mm] (float)
+                           end bolt line, perpendicular to the line of force [in sq. mm] (float)
             f_u: Ultimate stress of the plate material in MPa (float)
             f_y: Yield stress of the plate material in MPa (float)
 
