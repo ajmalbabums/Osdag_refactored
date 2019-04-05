@@ -22,7 +22,7 @@ class ShearConnectionInput(ConnectionInput):
             self.supporting_member = Beam(supporting_member_section, self.material)
         self.supported_member = Beam(supported_member_section, self.material)
         self.material = Material(fy=fy, fu=fu)
-        self.shear_load = Load(shear_force=shear_load)
+        self.load = Load(shear_force=shear_load)
         self.bolt = Bolt(diameter=bolt_diameter, grade=bolt_grade, bolt_type=bolt_type)
         self.bolt_diameter_list = []
 
@@ -68,3 +68,13 @@ class SeatedAngleConnectionInput(ShearConnectionInput):
         super(SeatedAngleConnectionInput, self).__init__(connectivity, supporting_member_section,
                                                          supported_member_section, fu, fy, shear_load,
                                                          bolt_diameter, bolt_type, bolt_grade)
+
+
+class MomentConnectionInput(ConnectionInput):
+    pass
+
+
+class TrussConnectionInput(ConnectionInput):
+    pass
+
+
