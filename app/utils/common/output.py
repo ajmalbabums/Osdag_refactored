@@ -34,3 +34,11 @@ class SeatedAngleConnectionOutput(ShearConnectionOutput):
 
     def __init__(self):
         super(SeatedAngleConnectionOutput, self).__init__()
+
+
+class MomentConnectionOutput(ConnectionOutput):
+    pass
+
+
+class TrussConnectionOutput(ConnectionOutput):
+    pass
